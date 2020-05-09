@@ -1,6 +1,10 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+import pandas as pd
+import numpy as np
+import geopy.distance
+
 from sklearn.metrics import f1_score, confusion_matrix, precision_score, recall_score
 
 def make_confusion_matrix(model, X, y, ticklabels=None, threshold=0.5, show_metrics=False):
@@ -25,3 +29,9 @@ def make_confusion_matrix(model, X, y, ticklabels=None, threshold=0.5, show_metr
         plt.text(3.5, 0, '{:.2}'.format(precision_score(y, y_predict)))
         plt.text(3, 0.2,'Recall:')
         plt.text(3.5, 0.2, '{:.2}'.format(recall_score(y, y_predict)))
+
+def getdist(df):
+    if np.isnan(df.prev_lat):
+        return np.nan
+    else:
+        return geopy.distance.distance((df.lat, df.lon), (df.prev_lat, df.prev_lon)).km
