@@ -1,0 +1,40 @@
+.vscode/settings.json
+__pycache__/eda.cpython-37.pyc
+data/factbook.zip
+data/fishing boats/drifting_longlines.csv
+data/fishing boats/fixed_gear.csv
+data/fishing boats/GlobalViewOfTransshipment_Aug2017.pdf
+data/fishing boats/pole_and_line.csv
+data/fishing boats/purse_seines.csv
+data/fishing boats/trawlers.csv
+data/fishing boats/trollers.csv
+data/fishing boats/unknown.csv
+data/military/COW country codes.csv
+data/military/data-changes.zip
+data/military/directed dyadic war may 2018.dta
+data/military/directed_dyadic_war.csv
+data/military/Discussion - MID changes as of v3.10.pdf
+data/military/Discussion - MIDs reviewed and unchanged as of v3.10.pdf
+data/military/Dispute-Coding-Manual-Updated-8-26-19.pdf
+data/military/dyadic mid 3.1_may 2018.dta
+data/military/Dyadic MID Codebook V3.0.pdf
+data/military/dyadic MIDs 3.1.csv
+data/military/dyadic mids.zip
+data/military/Incident_Level_4.3.zip
+data/military/Incident-Coding-Manual-Updated-9-11-19.pdf
+data/military/MID__GML_Response.pdf
+data/military/MID_Changes_as_of_v4.0.pdf
+data/military/MID_Level_4.3.zip
+data/military/MID_Narratives_1993-2001.pdf
+data/military/MID_Narratives_2002-2010.pdf
+data/military/MID_v3.0.associated document.pdf
+data/military/MID_v4.0_Codebook.pdf
+data/military/mid42_recommended_changes.pdf
+data/military/MIDA 4.3.dta
+data/military/MIDB 4.3.dta
+data/military/MIDI 4.3.dta
+data/military/MIDIP 4.3.dta
+data/military/MII_v4.0_Codebook.pdf
+data/military/qt0hw410xz.pdf
+data/military/The Directed Dyadic Interstate War Dataset Codebook.pdf
+data/sec financials/2020q1.zip
