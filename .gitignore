@@ -39,3 +39,10 @@ data/military/qt0hw410xz.pdf
 data/military/The Directed Dyadic Interstate War Dataset Codebook.pdf
 data/sec financials/2020q1.zip
 data/fishing boats/fishing-vessels-v1.csv
+.ipynb_checkpoints/eda-fishing-all-checkpoint.ipynb
+data/fishing boats/fishing_with_features.csv
+data/sql_credentials.key
+data/sql_credentials.hash
+sql_fish.py
+__pycache__/sql_access.cpython-37.pyc
+__pycache__/sql_fish.cpython-37.pyc
