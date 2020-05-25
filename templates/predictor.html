@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Test app for predicting fishing</title>
+</head>
+
+<body>
+  <div style="width: 50%; float: left;">
+    <div style="width: 50%; float: left;">
+      <form action="/predict">
+        <input type="radio" id="original" name="sample_type" value="original">
+        <label for="original">Fishing record with consensus</label>
+        <br>
+        
+        <input type="radio" id="noconsensus" name="sample_type" value="noconsensus">
+        <label for="noconsensus">Fishing record with no consensus</label>
+        <br>
+        
+        <input type="submit" value="Retrieve and predict" method="get">
+      </form>     
+    </div>
+    <div style="width: 50%; float: right;">
+      <table style="width:100%">
+        <tr>
+          <th>
+            Feature name
+          </th>
+          <th>
+            Value
+          </th>
+        </tr>
+      {% for f in feature_names %}
+        <tr>
+          <td>
+            {{ f }}
+          </td>
+          <td>
+            {{x_input[loop.index0] | round(1)}}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+    <table style="width: 100%;">
+      <tr>
+        <th>
+          Is this vessel fishing?
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Predicted %
+        </td>
+        <td>
+          {% for p in prediction %}
+          {{ 100*(1-p['prob']) | round(1) }}% 
+          {% endfor %}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Analyst %
+        </td>
+        <td>
+          {{ 100*actual_fishing | round(1) }}%
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div style="width: 50%; float: right;">
+  {% include 'mapping_targets.html' %}
+</div>
+
+</body>
+
+</html>

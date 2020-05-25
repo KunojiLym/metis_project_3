@@ -46,3 +46,12 @@ data/sql_credentials.hash
 sql_fish.py
 __pycache__/sql_access.cpython-37.pyc
 __pycache__/sql_fish.cpython-37.pyc
+data/fishing boats/fishing_sec.csv
+sqltools_20200513080848_6912.log
+*.pyc
+*.npz
+.ipynb_checkpoints/eda-fishing-trawler-checkpoint.ipynb
+data/weekday.png
+image/egle-sidaraviciute-7bxrtMRkc_o-unsplash.jpg
+image/ryan-moreno-Lurw1nCIkLc-unsplash.jpg
+~$GFW project.pptx
